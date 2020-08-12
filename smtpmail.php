@@ -28,19 +28,19 @@ if(file_exists(dirname(__FILE__) . "/mailsetup.php"))
     require_once(dirname(__FILE__) . "/mailsetup.php");
 else
 {
-    $mailsetup['server']   = "";
+    $mailsetup['server']   = "10.1.2.39";
     $mailsetup['port']     = 25;
-    $mailsetup['login']    = "";
-    $mailsetup['password'] = "";
+    $mailsetup['login']    = "noreply.ecsf@ega.go.tz";
+    $mailsetup['password'] = "Xan3KZ8Jyd";
 
     $mailsetup['namefrom'] = "";
     $mailsetup['sendfrom'] = "";
 
-    $mailsetup['replyname'] = $mailsetup['namefrom'];
-    $mailsetup['replymail'] = $mailsetup['sendfrom'];
+    $mailsetup['replyname'] = $mailsetup['noreply.ecsf@ega.go.tz'];
+    $mailsetup['replymail'] = $mailsetup['noreply.ecsf@ega.go.tz'];
 
-    $mailsetup['nameto']   = "";
-    $mailsetup['sendto']   = "";
+    $mailsetup['nameto']   = "Test";
+    $mailsetup['sendto']   = "redhatsec360@gmail.com";
 }
 
 class SMTPMail
